@@ -4,7 +4,7 @@ type Props = {}
 
 const HeaderAsoinco = (props: Props) => {
     return (
-        <div>HeaderAsoinco</div>
+        <div className=' hidden'> <h1 className=''>HeaderAsoinco</h1></div>
     )
 }
 
