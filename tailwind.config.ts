@@ -16,6 +16,17 @@ const config: Config = {
         "expo-image": 'url("/Expo_Image.jpg")',
 
       },
+      animation:
+      {
+        "loop-scroll": "loop-scroll 5s linear infinite",
+
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-200px * 7))" },
+        }
+      }
     },
   },
   plugins: [],
