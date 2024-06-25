@@ -2,7 +2,7 @@
 import React from 'react'
 import { imagesData } from "../data/arrays"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 type Props = {}
 
@@ -11,12 +11,16 @@ const ImagesAbout = (props: Props) => {
         <>
             <Swiper
                 slidesPerView={'auto'}
-                spaceBetween={10}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                spaceBetween={0}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
-                className="mySwiper cursor-pointer"
+                modules={[Pagination, Autoplay]}
+                className="mySwiper cursor-pointer h-[20rem] rounded-sm"
             >
                 {imagesData.map((urlImage, i) => (
 

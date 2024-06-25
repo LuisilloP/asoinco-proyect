@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import LogoFacebook from '../../../public/FLogo.svg'
-import LogoInstagram from '../../../public/IgLogo.svg'
+
+import LogoInstagram from '../../../public/svg/IgLogo.svg'
+import LogoWeb from '../../../public/svg/web.svg'
+import Logowhatsapp from '../../../public/svg/whatsapp.svg'
 import LogoAso from '../../../public/logoAso.png'
+
 type Props = {}
 
 const FooterAsoinco = (props: Props) => {
@@ -15,10 +18,10 @@ const FooterAsoinco = (props: Props) => {
                     <div>
 
                         <div className='pt-3 flex gap-3 items-center'>
-                            <p className='  text-white font-bold uppercase '>Síguenos en redes sociales</p>
+                            <p className='  text-white font-bold uppercase '>Contactanos</p>
                             <Link href={"https://www.instagram.com/asoinco.barrioindustrial/"} target='_blank'><Image src={LogoInstagram} width={27} height={27} alt='Logo Instagram' ></Image></Link>
-                            <Link href={""} target='_blank'><Image src={LogoFacebook} width={27} height={27} alt='Logo Facebook' ></Image></Link>
-                            <Link href={"https://www.asoinco.cl/"} target='_blank'><Image src={LogoFacebook} width={27} height={27} alt='Logo Facebook' ></Image></Link>
+                            <Link href={"https://api.whatsapp.com/send?phone=56979798887&text=Hola%20Asoinco!%20Tengo%20una%20consulta"} target='_blank'><Image src={Logowhatsapp} width={27} height={27} alt='Logo Facebook' ></Image></Link>
+                            <Link href={"https://www.asoinco.cl/"} target='_blank'><Image src={LogoWeb} width={27} height={27} alt='Logo Facebook' ></Image></Link>
                         </div>
                     </div>
                 </div>

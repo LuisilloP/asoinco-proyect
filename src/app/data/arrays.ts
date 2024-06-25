@@ -3,7 +3,10 @@ interface ComunasPorRegion {
 }
 import { StaticImageData } from "next/image";
 
-import Expo_Image from "../../../public/Expo_Image.jpg"
+import about_image_one from "../../../public/imagesAbout/about_image_one.jpg"
+import about_image_two from "../../../public/imagesAbout/about_image_two.jpg"
+import about_image_three from "../../../public/imagesAbout/about_image_three.jpg"
+import about_image_four from "../../../public/imagesAbout/about_image_four.jpg"
 
 import aeri_logo from "../../../public/sponsorsImg/aeri_logo.png"
 import asoinco_logo_one from "../../../public/sponsorsImg/asoinco_logo_one.png"
@@ -31,5 +34,5 @@ const comunasPorRegion: ComunasPorRegion = {
 
 const imageDataSponsors: StaticImageData[] = [asoinco_logo_one, aeri_logo, asoinco_logo_two, aeri_logo, asoinco_logo_two, asoinco_logo_one, asoinco_logo_two, asoinco_logo_one, aeri_logo, asoinco_logo_two,]
 
-const imagesData: StaticImageData[] = [Expo_Image, Expo_Image, Expo_Image]
+const imagesData: StaticImageData[] = [about_image_one, about_image_two, about_image_three, about_image_four]
 export { comunasPorRegion, imagesData, imageDataSponsors };
