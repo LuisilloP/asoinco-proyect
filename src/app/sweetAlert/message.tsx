@@ -32,7 +32,7 @@ export const fireAlert = (data: FormDataAsoinco) => {
 
                             imageUrl: qrCodeDataUrl,
                             html: `
-                            <a href="#" autofocus>Toma una captura de pantalla en caso de que no se haya decargado tu QR. Recuerda lo necesitas para ingresar</a>,
+                            <a href="#" autofocus>Toma una captura de pantalla en caso de que no se haya decargado tu QR. Recuerda lo necesitas para ingresar.</a>
                            
                         `,
                             imageAlt: "QRCode"
